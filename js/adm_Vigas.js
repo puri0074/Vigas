@@ -32,7 +32,7 @@ $(document).ready(function () {
   document.getElementById("Tacero").addEventListener("input", calcular);
   document.getElementById("Modelasticidad").addEventListener("input", calcular);
   document.getElementById("Tregidizadores").addEventListener("input", calcular);
-  document. getElementById("SeparacionRegi").addEventListener("input", calcular);
+  document.getElementById("SeparacionRegi").addEventListener("input", calcular);
   document.getElementById("Factormod").addEventListener("input", calcular);
   document.getElementById("donde1").addEventListener("input", calcular);
   document.getElementById("donde2").addEventListener("input", calcular);
@@ -53,6 +53,13 @@ $(document).ready(function () {
     var Factormod = parseFloat(document.getElementById("Factormod").value);
     var donde1 = parseFloat(document.getElementById("donde1").value);
     var donde2 = parseFloat(document.getElementById("donde2").value);
+
+
+    if (Tregidizadores === "Si") {
+      document.getElementById("SeparacionRegiContenedor").classList.remove("d-none");
+    } else {
+      document.getElementById("SeparacionRegiContenedor").classList.add("d-none");
+    }
 
     const entradas = `
     <tr>
@@ -557,12 +564,11 @@ $(document).ready(function () {
         </td>
     </tr>`;
 
-    var I18 = 0;
     // V. Resistencia a cortante
-    if ((I18 * 100) / LongitudLibre > (260 / (LongitudLibre / EspersorAlma)) ** 2 || (I18 * 100) / LongitudLibre > 3) {
+    if ((SeparacionRegi * 100) / LongitudLibre > (260 / (LongitudLibre / EspersorAlma)) ** 2 || (SeparacionRegi * 100) / LongitudLibre > 3) {
       var No = 5;
     } else {
-      var No = 5 + 5 / ((I18 * 100) / LongitudLibre) ** 2;
+      var No = 5 + 5 / ((SeparacionRegi * 100) / LongitudLibre) ** 2;
     }
 
     if (LongitudLibre / EspersorAlma < 260) {
@@ -726,7 +732,7 @@ $(document).ready(function () {
 
     // DLimDelastPorcentaje
     var DLimDelastPorcentaje = (DElastico / DLimite) * 100 + "%";
-
+    
     salidas += `
         <tr>
             <th colspan="5" scope="col">VI. Analisis de deflexion</th>

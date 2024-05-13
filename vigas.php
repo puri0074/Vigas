@@ -146,7 +146,7 @@ if (1 == 1 || 1 == 1) {
                                 </div>
                             </div>    
                                <!----Entrada que faltaba entrada oculto----->
-                               <div class="card text-center">
+                               <div id="SeparacionRegiContenedor" class="card text-center d-none">
                                 <label for="-">Separación entre regidizadores</label>
                                 <div class="row">
                                     <div class="col"><span>a =</span> </div>
