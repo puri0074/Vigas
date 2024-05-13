@@ -206,7 +206,7 @@ $(document).ready(function () {
 
     salidas += `
     <tr>
-    <th colspan="5" scope="col">I. Datos de salida</th>
+    <th colspan="5" scope="col" style="background-color: #00008B; color: white; font-size: 16px">I. Datos de salida</th>
     </tr>
     <!--01-->
     <tr>
@@ -217,7 +217,7 @@ $(document).ready(function () {
         <td>kg/cm2</td>
     </tr>
     <tr>
-        <th colspan="5" scope="col">II. Propiedades Geométricas de la Viga</th>
+        <th colspan="5" scope="col" style="background-color: #00008B; color: white; font-size; 16px">II. Propiedades Geométricas de la Viga</th>
     </tr>
     <!---02--->
     <tr>
@@ -342,7 +342,7 @@ $(document).ready(function () {
 
     salidas += `
     <tr>
-    <th colspan="5" scope="col" style="text-align: center">III. Esbeltez local</th>
+    <th colspan="5" scope="col" style="background-color: #00008B; color: white; font-size; 16px" >III. Esbeltez local</th>
     </tr>
     <tr>
         <th colspan="5" scope="col">3.1. Revisión del pandeo local en los patines</th>
@@ -500,7 +500,7 @@ $(document).ready(function () {
 
     salidas += `
     <tr>
-        <th colspan="5" scope="col">IV. Resistencia a flexión</th>
+        <th colspan="5" scope="col" style="background-color: #00008B; color: white; font-size; 16px">IV. Resistencia a flexión</th>
     </tr>
     <tr>
         <td>Zona 1</td>
@@ -642,7 +642,7 @@ $(document).ready(function () {
 
     salidas += `
     <tr>
-        <th colspan="5" scope="col">V. Resistencia a cortante</th>
+        <th colspan="5" scope="col" style="background-color: #00008B; color: white; font-size; 16px">V. Resistencia a cortante</th>
     </tr>
     <tr>
         <td>Coeficiente de pandeo de placa</td>
@@ -735,7 +735,7 @@ $(document).ready(function () {
     
     salidas += `
         <tr>
-            <th colspan="5" scope="col">VI. Analisis de deflexion</th>
+            <th colspan="5" scope="col" style="background-color: #00008B; color: white; font-size; 16px">VI. Analisis de deflexion</th>
         </tr>
         <tr>
             <td>Deflexión permitida</td>
